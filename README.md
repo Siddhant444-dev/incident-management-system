@@ -248,8 +248,3 @@ Incoming Signals → Redis Queue → Worker → Databases
 - RCA-based closure validation
 
 ---
-
-## 🖼️ UI Preview
-
-![Dashboard](docs/images/dashboard.png)
-
