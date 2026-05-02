@@ -1,0 +1,7 @@
+{
+  "component_id": "RDBMS_PRIMARY",
+  "component_type": "DATABASE",
+  "severity": "P0",
+  "message": "Database connection timeout",
+  "error_code": "DB_CONN_TIMEOUT"
+}

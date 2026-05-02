@@ -1,0 +1,7 @@
+{
+  "component_id": "CACHE_CLUSTER_01",
+  "component_type": "CACHE",
+  "severity": "P2",
+  "message": "Cache latency spike",
+  "latency_ms": 2200
+}
