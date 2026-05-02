@@ -1,6 +1,6 @@
 🚨 Incident Management System (IMS)
 
-📌 Overview
+📌 Overview:
 
 This project implements a Mission-Critical Incident Management System (IMS) designed to handle high-volume signals (errors, latency spikes) from distributed systems and manage incident workflows.
 
@@ -13,7 +13,7 @@ Mandatory Root Cause Analysis (RCA)
 Real-time dashboard for monitoring
 
 
-🏗️ Architecture
+🏗️ Architecture:
 Frontend (React)
        │
        ▼
@@ -30,7 +30,7 @@ MongoDB   PostgreSQL
 (Signals) (Incidents + RCA)
 
 
-⚙️ Tech Stack
+⚙️ Tech Stack:
 Backend: FastAPI (Async Python)
 Frontend: React (Vite)
 Queue: Redis Streams
@@ -40,7 +40,7 @@ Databases:
 DevOps: Docker Compose
 
 
-🚀 Features
+🚀 Features:
 🔹 High-Throughput Signal Ingestion
 Supports burst traffic using Redis Streams
 Designed for scalability (10k signals/sec ready)
@@ -73,7 +73,7 @@ RCA submission form
 Status transition buttons
 
 
-🔐 Non-Functional Enhancements (Bonus Points)
+🔐 Non-Functional Enhancements (Bonus Points):
 ✔ Performance
 Async processing using FastAPI
 Redis queue for high throughput
@@ -90,7 +90,7 @@ Controlled lifecycle transitions
 Input validation on APIs
 
 
-📊 API Endpoints
+📊 API Endpoints:
 Signals
 POST /api/signals
 Incidents
@@ -103,7 +103,7 @@ Health
 GET /health
 
 
-🧪 Sample Data
+🧪 Sample Data:
 
 Run simulation:
 
@@ -114,7 +114,7 @@ Test debouncing:
 python sample-data/burst_test.py
 
 
-🛠️ Setup & Run Instructions
+🛠️ Setup & Run Instructions:
 1️⃣ Start services
 docker compose up -d
 2️⃣ Run backend
@@ -128,7 +128,7 @@ npm run dev
 http://localhost:5173
 
 
-📦 Project Structure
+📦 Project Structure:
 incident-management-system/
 ├── backend/
 ├── frontend/
@@ -138,7 +138,7 @@ incident-management-system/
 ├── README.md
 
 
-⚡ Backpressure Strategy
+⚡ Backpressure Strategy:
 Incoming Signals → Redis Queue → Worker → Databases
 Benefits:
 Prevents database overload
@@ -146,8 +146,8 @@ Handles traffic spikes smoothly
 Ensures system stability
 Decouples ingestion from processing
 
-ls
-🧠 Design Highlights
+
+🧠 Design Highlights:
 Polyglot persistence (MongoDB + PostgreSQL)
 Async worker model
 Queue-based architecture
